@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase Web Page</title>
+    <!-- Use Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="min-h-screen flex flex-col items-center p-4 sm:p-8">
+        <!-- Header -->
+        <header class="w-full max-w-4xl bg-white shadow-xl rounded-xl p-6 mb-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold text-indigo-600 mb-2">Automotive Web Page</h1>
+            <p class="text-lg text-gray-600">A demonstration of fundamental Automotive elements.</p>
+        </header>
+
+        <!-- Main Content Container -->
+        <!-- The main container now has no max-width, allowing its children to stretch -->
+        <main class="w-full bg-white shadow-xl rounded-xl space-y-12">
+
+            <!-- Lists Section -->
+            <!-- These sections are now individually constrained and centered -->
+            <section id="lists" class="max-w-4xl mx-auto px-4 sm:px-8 py-8 border-b-2 border-gray-200">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Lists</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Unordered List -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-2">Automotive Units</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-600">
+                            <li>Engines</li>
+                            <li>Transmission</li>
+                            <li>Lubrication</li>
+                            <li>Cooling</li>
+                            <li>Lighting</li>
+                        </ul>
+                    </div>
+                    <!-- Ordered List -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-2">Top 3 Programming Languages </h3>
+                        <ol class="list-decimal list-inside space-y-1 text-gray-600">
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Table Section -->
+            <section id="table" class="max-w-4xl mx-auto px-4 sm:px-8 py-8 border-b-2 border-gray-200">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Data Table</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <thead class="bg-indigo-500 text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left font-bold">Name</th>
+                                <th class="py-3 px-4 text-left font-bold">Email</th>
+                                <th class="py-3 px-4 text-left font-bold">Role</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t border-gray-200 hover:bg-gray-50">
+                                <td class="py-3 px-4">Eric Owino</td>
+                                <td class="py-3 px-4">Eric46@gmail.com</td>
+                                <td class="py-3 px-4">Technician</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 hover:bg-gray-50">
+                                <td class="py-3 px-4">Felix Mulanda</td>
+                                <td class="py-3 px-4">Felix76@gmail.com</td>
+                                <td class="py-3 px-4">Trainer</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 hover:bg-gray-50">
+                                <td class="py-3 px-4">David Kiprotich</td>
+                                <td class="py-3 px-4">davikipro90@gmail.com</td>
+                                <td class="py-3 px-4">Manager</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Media Section -->
+            <section id="media" class="max-w-4xl mx-auto px-4 sm:px-8 py-8 border-b-2 border-gray-200">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Media</h2>
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <!-- Image -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="blue bmw sedan near green lawn grass" class="shadow-lg max-w-full h-auto">
+                        <p class="mt-2 text-sm text-gray-500">A sample image from Pexels.</p>
+                    </div>
+                    <!-- Video -->
+                    <div class="flex flex-col items-center">
+                        <video controls class="rounded-lg shadow-lg max-w-full h-auto">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="mt-2 text-sm text-gray-500">A sample video.</p>
+                    </div>
+                    <!-- Audio -->
+                    <div class="flex flex-col items-center">
+                        <audio controls>
+                           <source src="audio/restless_road_go_get_her_official_lyric_video_aac_70404.m4a" type="audio/mp4">
+
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p class="mt-2 text-sm text-gray-500">A sample audio track.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <!-- This section is now full-width with a light grey background -->
+            <section id="form" class="bg-gray-100 py-12">
+                <!-- Inner container to keep form content readable on large screens -->
+                <div class="max-w-xl mx-auto px-4 sm:px-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Registration Form</h2>
+                    <form action="#" method="post" class="space-y-6">
+
+                        <!-- Fieldset for Personal Information -->
+                        <fieldset class="border-2 border-gray-300 p-6 rounded-lg bg-white shadow-sm">
+                            <legend class="text-xl font-semibold text-gray-700 px-2 -ml-2">Personal Information</legend>
+
+                            <!-- Name Input -->
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-1">Full Name:</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" minlength="3" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition duration-200">
+                            </div>
+
+                            <!-- Email Input -->
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-1">Email Address:</label>
+                                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition duration-200">
+                            </div>
+
+                            <!-- Password Input with Pattern Validation -->
+                            <div class="mb-4">
+                                <label for="password" class="block text-gray-700 font-medium mb-1">Password:</label>
+                                <input type="password" id="password" name="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition duration-200">
+                                <p class="text-sm text-gray-500 mt-1">Must be at least 8 characters long and contain a number, an uppercase letter, and a lowercase letter.</p>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fieldset for Other Information -->
+                        <fieldset class="border-2 border-gray-300 p-6 rounded-lg bg-white shadow-sm">
+                            <legend class="text-xl font-semibold text-gray-700 px-2 -ml-2">Additional Details</legend>
+
+                            <!-- Age Input with Min/Max -->
+                            <div class="mb-4">
+                                <label for="age" class="block text-gray-700 font-medium mb-1">Age:</label>
+                                <input type="number" id="age" name="age" min="18" max="99" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition duration-200">
+                            </div>
+
+                            <!-- Phone Input -->
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-1">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition duration-200">
+                                <p class="text-sm text-gray-500 mt-1">Format: 123-456-7890</p>
+                            </div>
+
+                            <!-- Radio Buttons -->
+                            <div class="mb-4">
+                                <p class="text-gray-700 font-medium mb-2">Preferred Contact Method:</p>
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex items-center">
+                                        <input type="radio" id="contact-email" name="contact-method" value="email" required class="form-radio h-4 w-4 text-indigo-600">
+                                        <label for="contact-email" class="ml-2 text-gray-700">Email</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="contact-phone" name="contact-method" value="phone" class="form-radio h-4 w-4 text-indigo-600">
+                                        <label for="contact-phone" class="ml-2 text-gray-700">Phone</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="mb-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox h-4 w-4 text-indigo-600 rounded">
+                                    <label for="newsletter" class="ml-2 text-gray-700">Sign up for our newsletter</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Textarea -->
+                        <div class="mb-4">
+                            <label for="comments" class="block text-gray-700 font-medium mb-1">Comments:</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition duration-200"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit" class="w-full bg-indigo-600 text-white font-bold p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-200">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full max-w-4xl mt-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025. BRIAN KIPTOO. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
